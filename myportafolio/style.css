@@ -1,0 +1,143 @@
+body {
+    padding: 5em 1.25em 6em 3em;
+    margin: 0.5em;
+    color: #2e2d33;
+    background: #fffcfa;
+    position: relative;
+    font-size: 1.25em;
+    font-family: monospace;
+}
+
+@media (min-width: 640px) {
+    body {
+        font-size: 1.5em;
+        padding-right: 3em;
+    }
+}
+
+a {
+    color: initial;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.25em;
+    margin-top: 0.83em;
+    margin-bottom: -1em;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 1em;
+    margin-top: 4em;
+    margin-bottom: 1.25em;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    line-height: 1.33em;
+}
+
+h2,
+ul,
+ol,
+article {
+    max-width: 56ch;
+}
+
+ul,
+ol {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: section;
+}
+
+li {
+    margin-bottom: 0.66em;
+    margin-left: -0.25em;
+    padding-left: 0.25em;
+    line-height: 1.33em;
+    letter-spacing: -0.01em;
+    position: relative;
+}
+
+ol li:before {
+    counter-increment: section;
+    content: "0" counter(section);
+    font-size: 0.75em;
+    display: inline-block;
+    position: absolute;
+    right: calc(100% + 1ch);
+    top: -1ch;
+    transform: rotate(10deg) skewX(10deg);
+}
+
+li strong {
+    color: blue;
+    font-weight: inherit;
+}
+
+.seal {
+    color: rgb(87, 56, 190);
+    border: 2px solid rgb(110, 64, 190);
+    position: absolute;
+    padding: 0.33em 0.2em 0.33em;
+    line-height: 1.05em;
+    font-size: 1.167em;
+    right: 0.5em;
+    bottom: 0.5em;
+    border-radius: 999rem;
+}
+
+:root {
+    --avvy-bg: rgba(255, 35, 229, 0.2);
+}
+
+img.me {
+    width: 6em;
+    border-radius: 2.5em;
+    height: auto;
+    max-width: 100%;
+    background-color: var(--avvy-bg);
+    backdrop-filter: saturate(5);
+    -webkit-backdrop-filter: saturate(5);
+}
+
+
+
+div.chun::after {
+    content: "\01F004\00FE0E";
+    display: inline-block;
+    width: 100px;
+}
+
+span.at {
+    display: inline-block;
+    transform: scale(0.75);
+    opacity: 0.75;
+}
+
+
+#contacto {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+}
+
+
+footer {
+    display: block;
+    margin-top: 4em;
+    margin-bottom: 1.25em;
+    font-size: 1.55em;
+    letter-spacing: -0.01em;
+    line-height: 1.33em;
+}
