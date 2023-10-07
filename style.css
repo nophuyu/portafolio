@@ -107,7 +107,7 @@ img.me {
     width: 6em;
     border-radius: 2.5em;
     height: auto;
-    max-width: 100%;
+    max-width: 150px;
     background-color: var(--avvy-bg);
     backdrop-filter: saturate(5);
     -webkit-backdrop-filter: saturate(5);
