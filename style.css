@@ -4,7 +4,6 @@ body {
     color: #2e2d33;
     background: #fffcfa;
     position: relative;
-
     font-size: 1.25em;
     font-family: 'Courier New', Courier, monospace;
     width: 800px;
@@ -143,4 +142,14 @@ footer {
     font-size: 1.55em;
     letter-spacing: -0.01em;
     line-height: 1.33em;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1em;
+        margin: 1rem;
+        width: auto;
+        height: auto;
+    }
+
 }
