@@ -1,13 +1,14 @@
 body {
     padding: 5em 1.25em 6em 3em;
     margin: 0.5em auto;
-    colossssssr: #2e2d33;
+    color: #2e2d33;
     background: #fffcfa;
     position: relative;
 
     font-size: 1.25em;
     font-family: 'Courier New', Courier, monospace;
     width: 800px;
+
 }
 
 @media (min-width: 640px) {
